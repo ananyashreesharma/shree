@@ -142,7 +142,7 @@ toggle.addEventListener('click', () => nav.classList.toggle('active'))
 }
 
 .intro-text {
-  font-family: 'VT323', monospace;
+  font-family: 'Electrolize', monospace;
   color: black;
   font-size: 2.5rem;
   text-align: center;
