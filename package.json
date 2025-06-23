@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "framer-motion": "^12.18.1",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.522.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

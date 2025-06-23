@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100;200;300;400;500;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Share Tech Mono', 'Geist Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    font-weight: 400;
+    @apply tracking-tight;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Day Mode - Clean White */
+  body.day-mode {
+    background: linear-gradient(135deg, #f4d03f 0%, #f7dc6f 25%, #f9e79f 50%, #fcf3cf 75%, #fef9e7 100%);
+    color: #1a1a1a;
+  }
+  
+  /* Night Mode - Clean Dark */
+  body:not(.day-mode) {
+    background: #0a0a0a;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .theme-transition {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .minimal-link {
+    @apply underline decoration-current underline-offset-4 hover:no-underline transition-all duration-200;
+  }
+  
+  .minimal-section {
+    @apply mb-12;
+  }
+  
+  .minimal-heading {
+    @apply text-lg font-medium mb-4;
+  }
+  
+  .minimal-text {
+    @apply text-base leading-relaxed;
+  }
+  
+  .minimal-project {
+    @apply mb-6 pb-6 border-b last:border-b-0;
+  }
+  
+  .minimal-project-title {
+    @apply text-base font-medium mb-1;
+  }
+  
+  .minimal-project-desc {
+    @apply text-sm opacity-80;
+  }
+  
+  .minimal-contact {
+    @apply text-sm;
+  }
+  
+  .minimal-contact-link {
+    @apply underline decoration-current underline-offset-2 hover:no-underline;
+  }
+
+  .icon-theme-color {
+    fill: #1a1a1a;
+  }
+
+  body:not(.day-mode) .icon-theme-color {
+    fill: #ffffff;
+  }
+
+  .signature-text {
+    @apply font-black text-5xl -tracking-tighter;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Custom border colors for theme */
+  .border-theme {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  body:not(.day-mode) .border-theme {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  body:not(.day-mode) .signature-text {
+    background-image: radial-gradient(circle, hsla(0, 0%, 100%, 0.25) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  body.day-mode .signature-text {
+    background-image: radial-gradient(circle, hsla(0, 0%, 0%, 0.4) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+}
