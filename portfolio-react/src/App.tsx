@@ -22,8 +22,8 @@ const projects: Project[] = [
   {
     id: 'better-wellness',
     title: 'Better Wellness',
-    description: 'A full-stack wellness web app built with JavaScript, HTML/CSS, and shell scripts — designed to promote healthy habits through a client-server model.',
-    githubUrl: 'https://github.com/ananyashreesharma/betterwell'
+    description: 'A full-stack mental health blogging web app built with the MERN stack, designed to promote mental health advocacy and provide support through helpline data, following a client-server model.',
+    githubUrl: 'https://betterwell.vercel.app/'
   },
   {
     id: 'disease-assembler',
@@ -54,7 +54,7 @@ const projects: Project[] = [
 const currentProjects: CurrentProject[] = [
   {
     id: 'work-platform',
-    description: 'a work-focused web platform using Spring Boot and Thymeleaf — includes role-based access, clean dashboards, and secure workflows to streamline internal operations.'
+    description: 'a personal journaling and note taking app for myself and for people like me'
   },
   {
     id: 'blogging-system',
@@ -94,13 +94,13 @@ function Portfolio() {
         <section className="minimal-section">
           <h2 className="minimal-heading">me</h2>
           <p className="minimal-text mb-4">
-            Wrote my first line of code at 16 and loved it instantly. For the next few years, things just clicked — kind of like Copilot now, but all in my head. Took a break for a while, but got back to coding at 22 and haven't stopped since.
+            Wrote my first line of code at 16 and loved it instantly. For the next few years, things just clicked… kind of like copilot now, but all in my head. Took a break for a while, but got back to coding at 21ish and haven't stopped since.
           </p>
           <p className="minimal-text mb-4">
-            Got into data structural and algorithmic approaches, explored different stacks, and eventually started a remote job in a corporate gig. There, I got to look at the moving parts, the challenges, and the invisible decisions that make everything just work — for huge, huge numbers of users. That said, I still enjoy tweaking a UI or two — especially when it helps close the loop for the end user.
+            Got into algorithmic approaches, explored different stacks, and eventually started a remote job in a corporate gig. There, I got to look at the moving parts, the challenges, and the invisible decisions that make everything just work for huge, huge numbers of users. That said, I still enjoy tweaking a UI or two especially when it helps close the loop for the end user.
           </p>
           <p className="minimal-text">
-            When I'm not coding, you'll find me reading random articles, overthinking life, crafting real-life outfits, or photographing every funny thing I come across.
+            When I'm not coding, you'll find me in a rabbit hole of articles on certain topics, exploring the design aspects, or photographing every funny thing I come across.
           </p>
         </section>
 
@@ -120,11 +120,11 @@ function Portfolio() {
               Software Engineer
             </p>
             <ul className="space-y-2 text-sm opacity-90">
-              <li>• Wrote a Spring Boot job to clean up stale HR records — saved hours of manual effort</li>
-              <li>• Set up real-time data sync for Renault (Brazil & Romania) — reduced lag from 24h to 5m</li>
+              <li>• Wrote a Spring Boot job to clean up stale HR records and saved hours of manual effort</li>
+              <li>• Set up real-time data sync for Renault (Brazil & Romania) and reduced lag from 24h to 5m</li>
               <li>• Built a React dashboard to track agent tasks</li>
               <li>• Used Docker and GitHub Actions for deployments</li>
-              <li>• Added auto-delete logic for old tickets on Walgreens' platform — helped cut costs</li>
+              <li>• Added auto delete logic for old tickets on Walgreens' platform that helped cut costs</li>
               <li>• Got a Sparkling Star award for making useful stuff across multiple teams</li>
             </ul>
           </div>
@@ -183,6 +183,10 @@ function Portfolio() {
             connect on{' '}
             <a href="https://github.com/anannyashreesharma" target="_blank" rel="noopener noreferrer" className="minimal-contact-link">
               GitHub
+            </a>
+            {' '}·{' '}
+            <a href="https://x.com/anannyashree_" target="_blank" rel="noopener noreferrer" className="minimal-contact-link">
+              X
             </a>
             {' '}·{' '}
             <a href="https://www.linkedin.com/in/anannyashree-sharma/" target="_blank" rel="noopener noreferrer" className="minimal-contact-link">
