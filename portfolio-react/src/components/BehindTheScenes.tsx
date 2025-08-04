@@ -34,11 +34,6 @@ const BehindTheScenes = () => {
               Tailwind CSS v3 for utility-first styling with custom CSS variables for theme switching
             </p>
             
-            <h3 className="minimal-project-title mb-3">Animations</h3>
-            <p className="minimal-project-desc mb-4">
-              Framer Motion for smooth animations and transitions
-            </p>
-            
             <h3 className="minimal-project-title mb-3">Build Tool</h3>
             <p className="minimal-project-desc mb-4">
               Create React App with custom PostCSS configuration
@@ -58,11 +53,8 @@ const BehindTheScenes = () => {
             <p className="minimal-project-desc mb-4">
               Minimalism with purpose. Every element serves a function while maintaining visual harmony.
             </p>
-            <p className="minimal-project-desc mb-4">
-              Inspired by the principle that less is more — focusing on content over decoration.
-            </p>
             <p className="minimal-project-desc">
-              Accessibility-first approach with proper contrast ratios and semantic HTML.
+              Inspired by the principle that less is more
             </p>
           </div>
         </section>
@@ -93,7 +85,7 @@ const BehindTheScenes = () => {
           <div className="minimal-project border-theme">
             <h3 className="minimal-project-title mb-3">Font Stack</h3>
             <p className="minimal-project-desc mb-4">
-              Primary: 'Courier New', monospace — for that robotic, congested feel<br/>
+              Primary: 'Courier New', monospace - - - for that robotic, congested feel<br/>
               Fallback: system monospace fonts for consistency across platforms
             </p>
             
@@ -118,56 +110,37 @@ const BehindTheScenes = () => {
           <div className="minimal-project border-theme">
             <h3 className="minimal-project-title mb-3">Reading Experience</h3>
             <p className="minimal-project-desc mb-4">
-              Single column layout with comfortable reading width — makes content easy to scan and digest<br/>
-              Consistent spacing throughout creates a calm, organized feeling
-            </p>
-            
-            <h3 className="minimal-project-title mb-3">Visual Structure</h3>
-            <p className="minimal-project-desc mb-4">
-              Each section follows the same pattern with subtle borders — helps your eye flow naturally through the content<br/>
-              Projects and experience items look like cards, making them easy to distinguish
+              Single column layout with comfortable reading width
             </p>
             
             <h3 className="minimal-project-title mb-3">Mobile-Friendly</h3>
-            <p className="minimal-project-desc">
-              Works beautifully on phones, tablets, and desktops — text and spacing adjust automatically for the best experience on any device
+            <p className="minimal-project-desc mb-4">
+              Works on phones, tablets, and desktops. Text and spacing adjust automatically
             </p>
-          </div>
-        </section>
-
-        {/* Animations */}
-        <section className="minimal-section">
-          <h2 className="minimal-heading">animations</h2>
-          <div className="minimal-project border-theme">
+            
             <h3 className="minimal-project-title mb-3">Theme Switching</h3>
             <p className="minimal-project-desc mb-4">
-              Smooth color transitions when switching between day and night modes — feels polished and intentional<br/>
-              Toggle button responds instantly to your clicks with subtle hover effects
+              Smooth color transitions when switching between day and night modes
             </p>
             
             <h3 className="minimal-project-title mb-3">Interactive Elements</h3>
             <p className="minimal-project-desc mb-4">
-              Send button appears smoothly when you start typing feedback — provides clear visual feedback<br/>
-              Links and buttons have gentle hover effects that make them feel responsive
+              Send button appears smoothly when you start typing feedback
             </p>
             
             <h3 className="minimal-project-title mb-3">Accessibility</h3>
             <p className="minimal-project-desc">
-              All interactive elements have clear focus states — works well with keyboard navigation and screen readers
+              All interactive elements have clear focus states which works well with keyboard navigation and screen readers
             </p>
           </div>
         </section>
+
+
 
         {/* Design Inspirations */}
         <section className="minimal-section">
           <h2 className="minimal-heading">design inspirations</h2>
           <div className="minimal-project border-theme">
-            <h3 className="minimal-project-title mb-3">Minimalist Philosophy</h3>
-            <p className="minimal-project-desc mb-4">
-              Inspired by Lee Robinson, Andrés Martínez, and Zaid Mukaddam who champion extreme minimalism<br/>
-              Focus on typography and whitespace over decorative elements
-            </p>
-            
             <h3 className="minimal-project-title mb-3">Monospace Aesthetic</h3>
             <p className="minimal-project-desc mb-4">
               Terminal/console aesthetic for that technical, developer-friendly feel<br/>
@@ -190,9 +163,9 @@ const BehindTheScenes = () => {
               Stole designs from these amazing creators:
             </p>
             <ul className="space-y-2 text-sm opacity-90">
-              <li>• <a href="https://leerob.com" target="_blank" rel="noopener noreferrer" className="minimal-link">Lee Robinson</a></li>
-              <li>• <a href="https://www.andrs.me" target="_blank" rel="noopener noreferrer" className="minimal-link">Andrés Martínez</a></li>
-              <li>• <a href="https://zaidmukaddam.com" target="_blank" rel="noopener noreferrer" className="minimal-link">Zaid Mukaddam</a></li>
+              <li>• Lee Robinson</li>
+              <li>• Andrés Martínez</li>
+              <li>• Zaid Mukaddam</li>
             </ul>
           </div>
         </section>

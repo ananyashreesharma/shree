@@ -7,6 +7,7 @@ interface Project {
   title: string;
   description: string;
   githubUrl: string;
+  liveUrl?: string;
   techStack?: string[];
 }
 
@@ -14,9 +15,9 @@ const projects: Project[] = [
   {
     id: 'better-wellness',
     title: 'Better Wellness',
-    description: 'A full-stack wellness web app built with JavaScript, HTML/CSS, and shell scripts — designed to promote healthy habits through a client-server model.',
-    githubUrl: 'https://github.com/ananyashreesharma/betterwell',
-    techStack: ['JavaScript', 'HTML/CSS', 'Shell Scripts', 'Client-Server Architecture']
+    description: 'A full-stack mental health blogging web app built with the MERN stack, designed to promote mental health advocacy and provide support through helpline data, following a client-server model.',
+    githubUrl: 'https://betterwell.vercel.app/',
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'CSS3']
   },
   {
     id: 'disease-assembler',
@@ -42,7 +43,7 @@ const projects: Project[] = [
   {
     id: 'kommunity',
     title: 'Kommunity',
-    description: 'A PHP-based social networking platform featuring user authentication, real-time chat, profile management, and dynamic post viewing — backed by a structured MVC-like architecture with modular components and MySQL integration.',
+    description: 'A PHP-based social networking platform featuring user authentication, real-time chat, profile management, and dynamic post viewing. It is backed by a structured MVC-like architecture with modular components and MySQL integration.',
     githubUrl: 'https://github.com/ananyashreesharma/DA_Community',
     techStack: ['PHP', 'MySQL', 'MVC Architecture', 'Real-time Chat', 'User Authentication']
   }
@@ -81,7 +82,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="minimal-link text-sm"
                   >
-                    GitHub
+                    {project.id === 'better-wellness' ? 'Live Demo' : 'GitHub'}
                   </a>
                 </div>
                 <p className="minimal-project-desc mb-4">
