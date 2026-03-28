@@ -1,0 +1,153 @@
+/* 404 Lost in the Jungle */
+.notfound-shell {
+  --bg-teal: #0e6b58;
+  --fur-pink: #ffb7b2;
+  --fur-shadow: #e58e8a;
+  --stripe-black: #0f0a0d;
+  --eye-yellow: #ffb300;
+  --eye-pupil: #000000;
+  --text-white: #f0f0f0;
+}
+
+.notfound-shell {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-teal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.notfound-error-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: url(#notfound-rough-paper);
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.notfound-svg {
+  width: 320px;
+  height: 220px;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.notfound-letter-group {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.notfound-letter-base {
+  fill: var(--fur-pink);
+  stroke: var(--stripe-black);
+  stroke-width: 4px;
+}
+
+.notfound-stripe {
+  fill: var(--stripe-black);
+}
+
+.notfound-tiger-eye {
+  transform-origin: center;
+}
+
+.notfound-eye-sclera {
+  fill: var(--eye-yellow);
+  stroke: var(--stripe-black);
+  stroke-width: 3px;
+}
+
+.notfound-eye-x {
+  stroke: var(--eye-pupil);
+  stroke-width: 3px;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.notfound-error-msg {
+  color: var(--text-white);
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.notfound-code-404 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -2px;
+  color: var(--fur-pink);
+  text-shadow: 3px 3px 0px var(--stripe-black);
+}
+
+.notfound-sub-text {
+  font-size: 1rem;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-white);
+}
+
+.notfound-back-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.notfound-back-link {
+  display: inline-block;
+  margin-top: 0;
+  color: var(--eye-yellow);
+  text-decoration: none;
+  border: 2px solid var(--eye-yellow);
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.notfound-back-link:hover {
+  background: var(--eye-yellow);
+  color: var(--bg-teal);
+}
+
+@keyframes notfound-wobble {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.notfound-scrambled {
+  animation: notfound-wobble 3s ease-in-out infinite;
+}
+
+.notfound-art-layer {
+  animation: notfound-texture-boil 0.2s steps(2) infinite;
+}
+
+@keyframes notfound-texture-boil {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-1px, 1px);
+  }
+}
