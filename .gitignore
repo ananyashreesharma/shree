@@ -1,0 +1,9 @@
+# Monorepo / workspace root
+.DS_Store
+.idea/
+.vscode/
+
+# App (Create React App)
+portfolio-react/node_modules/
+portfolio-react/build/
+portfolio-react/.env*
