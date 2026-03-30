@@ -1,0 +1,157 @@
+:root {
+  --bg-black: #000000;
+  --fur-orange: #ff6600;
+  --fur-shadow: #cc5200;
+  --stripe-black: #000000;
+  --eye-yellow: #ffff00;
+  --eye-pupil: #000000;
+}
+
+.purrfolio-hero {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.purrfolio-hero .logo-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: url('#rough-paper');
+}
+
+.purrfolio-hero .logo-container svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.purrfolio-hero .letter-group {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.purrfolio-hero .letter-base {
+  fill: var(--fur-orange);
+  stroke: var(--stripe-black);
+  stroke-width: 2px;
+}
+
+.purrfolio-hero .stripe {
+  fill: var(--stripe-black);
+}
+
+.purrfolio-hero .tiger-eye {
+  transform-origin: center;
+  transition: transform 0.1s;
+}
+
+.purrfolio-hero .eye-sclera {
+  fill: var(--eye-yellow);
+  stroke: var(--stripe-black);
+  stroke-width: 1px;
+  transform-origin: center;
+  transition: transform 0.1s;
+}
+
+.purrfolio-hero .eye-pupil {
+  fill: var(--eye-pupil);
+  transition: transform 0.1s ease-out;
+}
+
+.purrfolio-hero .scratch-mark {
+  stroke: var(--fur-orange);
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: round;
+  opacity: 0;
+  animation: scratchReveal 5s infinite;
+}
+
+.purrfolio-hero .subtitle {
+  fill: var(--fur-orange);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 5px rgba(255, 102, 0, 0.5));
+}
+
+@keyframes scratchReveal {
+  0%,
+  10% {
+    opacity: 0;
+    stroke-dashoffset: 50;
+    stroke-dasharray: 50;
+  }
+  15% {
+    opacity: 0.8;
+    stroke-dashoffset: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  40%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.purrfolio-hero .letter-group:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+@keyframes texture-boil {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.purrfolio-hero .art-layer {
+  animation: texture-boil 0.2s steps(2) infinite;
+}
+
+/* Navigation — not in original HTML; matches palette */
+.purrfolio-hero .enter-link {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--fur-orange);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.45);
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.purrfolio-hero .enter-link:hover {
+  color: #ff9933;
+  border-color: rgba(255, 153, 51, 0.7);
+}
+
+.purrfolio-hero .enter-link:focus-visible {
+  outline: 2px solid var(--eye-yellow);
+  outline-offset: 6px;
+}
