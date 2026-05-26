@@ -75,6 +75,25 @@
   max-width: 720px;
 }
 
+.projects-boss-construction {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.projects-boss-cs-icon {
+  font-size: 3rem;
+}
+
+.projects-boss-cs-text {
+  font-family: var(--f-serif);
+  font-size: 1.15rem;
+  color: var(--c-text-light);
+  margin: 0;
+}
+
 .projects-boss-cat-shell {
   margin-bottom: 28px;
 }

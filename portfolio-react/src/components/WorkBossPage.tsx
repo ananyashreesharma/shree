@@ -76,9 +76,7 @@ export function WorkBossPage() {
           ← Editorial
         </Link>
         <span className="work-boss-badge">experience</span>
-        <Link to={ROUTES.projectsBoss} className="work-boss-to-timeline">
-          Projects →
-        </Link>
+        <span />
       </header>
 
       <main className="work-boss-main">
