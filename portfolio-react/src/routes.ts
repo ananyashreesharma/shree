@@ -4,4 +4,7 @@ export const ROUTES = {
   editorial: '/editorial',
   workBoss: '/work-boss',
   projectsBoss: '/projects-boss',
+  contact: '/contact',
+  about: '/about',
+  blogs: '/blogs',
 } as const;

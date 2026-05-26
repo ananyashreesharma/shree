@@ -85,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 28px 36px 22px;
+  padding: 24px 32px 20px;
   background: #ffffff;
   border: 2px solid var(--c-text);
   border-radius: 140px;
@@ -108,6 +108,14 @@
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+  cursor: default;
+}
+
+.projects-boss-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.1);
+  border-color: var(--c-text);
 }
 
 .projects-boss-card-mascot {

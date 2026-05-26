@@ -5,6 +5,9 @@ import { NotFoundPage } from './components/NotFoundPage';
 import { EditorialIdleGame } from './components/EditorialIdleGame';
 import { WorkBossPage } from './components/WorkBossPage';
 import { ProjectsBossPage } from './components/ProjectsBossPage';
+import { ContactPage } from './components/ContactPage';
+import { AboutPage } from './components/AboutPage';
+import { BlogsPage } from './components/BlogsPage';
 import { ROUTES } from './routes';
 
 export default function App() {
@@ -15,6 +18,9 @@ export default function App() {
         <Route path={ROUTES.editorial} element={<EditorialIdleGame />} />
         <Route path={ROUTES.workBoss} element={<WorkBossPage />} />
         <Route path={ROUTES.projectsBoss} element={<ProjectsBossPage />} />
+        <Route path={ROUTES.contact} element={<ContactPage />} />
+        <Route path={ROUTES.about} element={<AboutPage />} />
+        <Route path={ROUTES.blogs} element={<BlogsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
