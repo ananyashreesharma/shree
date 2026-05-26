@@ -1091,9 +1091,15 @@
     padding: 12px 6px 8px !important;
   }
 
-  /* Hide cat — touch devices can't interact with it well */
-  .editorial-walking-cat-mover {
-    display: none;
+  /* Scale cat down so it fits a narrow screen */
+  .editorial-walking-cat {
+    transform: scale(0.65);
+    transform-origin: bottom left;
+  }
+
+  .editorial-cat-right {
+    transform: scale(0.65) scaleX(-1);
+    transform-origin: bottom right;
   }
 
   /* Hatching is too heavy on small screens */
