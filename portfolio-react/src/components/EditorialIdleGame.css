@@ -994,6 +994,129 @@
   }
 }
 
+/* ── Mobile hub layout (≤ 600px) ── */
+@media (max-width: 600px) {
+  .editorial-idle-root {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .editorial-app-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 10px 10px 48px;
+  }
+
+  .editorial-stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+    justify-items: center;
+    overflow: visible;
+    padding: 8px 0 16px;
+    min-height: 0;
+  }
+
+  /* Reset all absolute positioning */
+  .editorial-node {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  .editorial-node:hover {
+    transform: scale(1.02) !important;
+  }
+
+  /* Center card — full width, top row */
+  .editorial-node-4 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 130px;
+    border-radius: 28px !important;
+    transform: none !important;
+  }
+
+  .editorial-node-4:hover {
+    transform: translateY(-2px) !important;
+  }
+
+  /* Satellite circles — 2×2 grid */
+  .editorial-node-2,
+  .editorial-node-3,
+  .editorial-node-5,
+  .editorial-node-6 {
+    width: min(148px, calc(50vw - 18px)) !important;
+    height: min(148px, calc(50vw - 18px)) !important;
+    border-radius: 50% !important;
+  }
+
+  .editorial-node-2 { grid-column: 1; grid-row: 2; }
+  .editorial-node-3 { grid-column: 2; grid-row: 2; }
+  .editorial-node-6 { grid-column: 1; grid-row: 3; }
+  .editorial-node-5 { grid-column: 2; grid-row: 3; }
+
+  /* Shrink ring SVGs to fit smaller circles */
+  .editorial-svg-text-ring {
+    width: 145% !important;
+    height: 145% !important;
+    top: -22% !important;
+    left: -22% !important;
+  }
+
+  /* Center card internals */
+  .editorial-brand-title-compact {
+    font-size: 18px;
+  }
+
+  .editorial-center-img {
+    height: 70px;
+  }
+
+  /* Satellite node text */
+  .editorial-cta-node-title,
+  .editorial-projects-node-title {
+    font-size: 12px !important;
+  }
+
+  .editorial-cta-node-inner--node2,
+  .editorial-cta-node-inner--node3,
+  .editorial-projects-node-inner {
+    padding: 12px 6px 8px !important;
+  }
+
+  /* Hide cat — touch devices can't interact with it well */
+  .editorial-walking-cat-mover {
+    display: none;
+  }
+
+  /* Hatching is too heavy on small screens */
+  .editorial-hatching {
+    display: none;
+  }
+
+  /* Popup full-width on mobile */
+  .hub-popup-panel {
+    max-width: 100%;
+    border-radius: 18px;
+    padding: 20px 16px 18px;
+  }
+
+  .hub-popup-img {
+    height: 140px;
+  }
+
+  .hub-popup-title {
+    font-size: 1.3rem;
+  }
+}
+
 /* ── Hub popups ── */
 .hub-popup-backdrop {
   position: fixed;

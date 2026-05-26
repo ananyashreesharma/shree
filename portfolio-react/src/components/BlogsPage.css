@@ -113,3 +113,22 @@
   line-height: 1.5;
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .blogs-page-top {
+    padding: 14px 16px 6px;
+  }
+
+  .blogs-page-main {
+    padding: 8px 16px 32px;
+  }
+
+  .blogs-page-title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    margin-bottom: 32px;
+  }
+
+  .blogs-page-cs-inner {
+    padding: 36px 24px;
+  }
+}

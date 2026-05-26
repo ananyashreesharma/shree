@@ -207,3 +207,39 @@
   line-height: 1.55;
   color: var(--c-text-light);
 }
+
+@media (max-width: 600px) {
+  .contact-page-top {
+    padding: 14px 16px 6px;
+  }
+
+  .contact-page-main {
+    padding: 8px 16px 32px;
+  }
+
+  .contact-page-title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .contact-page-hero-img {
+    height: 160px;
+    min-width: 0;
+  }
+
+  .contact-page-img-shell {
+    margin: 20px auto 24px;
+  }
+
+  .contact-page-lead {
+    font-size: 14px;
+  }
+
+  .contact-page-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contact-page-card-value {
+    font-size: 0.95rem;
+  }
+}

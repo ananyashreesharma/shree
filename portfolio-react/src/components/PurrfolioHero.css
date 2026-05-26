@@ -155,3 +155,15 @@
   outline: 2px solid var(--baby-pink);
   outline-offset: 6px;
 }
+
+@media (max-width: 600px) {
+  .purrfolio-hero .logo-container {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .purrfolio-hero .enter-link {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+}
