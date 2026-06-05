@@ -31,6 +31,7 @@ const BLOGS = [
 ];
 
 export function BlogsPage() {
+  document.title = 'Blogs — Anannya';
   return (
     <div className="editorial-idle-root blogs-page">
       <div className="editorial-bg-hex-grid" />

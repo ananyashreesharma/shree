@@ -62,6 +62,7 @@ function FloatingDots() {
 }
 
 export function ContactPage() {
+  document.title = 'Get in Touch — Anannya';
   return (
     <div className="editorial-idle-root contact-page">
       <div className="editorial-bg-hex-grid" />

@@ -5,6 +5,7 @@ import helloImg from '../assets/hellocat.jpg';
 import './AboutPage.css';
 
 export function AboutPage() {
+  document.title = 'About — Anannya';
   return (
     <div className="editorial-idle-root about-page">
       <div className="editorial-bg-hex-grid" />

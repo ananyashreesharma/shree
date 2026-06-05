@@ -65,6 +65,7 @@ function FloatingDots() {
 }
 
 export function WorkBossPage() {
+  document.title = 'Experience — Anannya';
   return (
     <div className="editorial-idle-root work-boss-page">
       <div className="editorial-bg-hex-grid" />

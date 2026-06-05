@@ -137,6 +137,7 @@ function Popup({ kind, onClose }: { kind: PopupKind; onClose: () => void }) {
 }
 
 export function EditorialIdleGame() {
+  document.title = 'Anannya — Portfolio';
   const navigate = useNavigate();
   const [popup, setPopup] = useState<PopupKind>(null);
 

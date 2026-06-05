@@ -4,6 +4,7 @@ import { ROUTES } from '../routes';
 import './ProjectsBossPage.css';
 
 export function ProjectsBossPage() {
+  document.title = 'Projects — Anannya';
   return (
     <div className="editorial-idle-root projects-boss-page">
       <div className="editorial-bg-hex-grid" />

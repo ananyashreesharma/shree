@@ -2,8 +2,8 @@
 export const ROUTES = {
   root: '/',
   editorial: '/editorial',
-  workBoss: '/work-boss',
-  projectsBoss: '/projects-boss',
+  workBoss: '/experience',
+  projectsBoss: '/projects',
   contact: '/contact',
   about: '/about',
   blogs: '/blogs',
