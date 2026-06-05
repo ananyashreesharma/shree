@@ -1,4 +1,4 @@
-.projects-boss-page {
+.projects-page {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -8,12 +8,12 @@
   padding-bottom: 48px;
 }
 
-.projects-boss-page .editorial-bg-hex-grid,
-.projects-boss-page .editorial-bg-blur {
+.projects-page .editorial-bg-hex-grid,
+.projects-page .editorial-bg-blur {
   position: fixed;
 }
 
-.projects-boss-stars {
+.projects-stars {
   position: fixed;
   inset: 0;
   z-index: 3;
@@ -21,19 +21,19 @@
   overflow: hidden;
 }
 
-.projects-boss-star {
+.projects-star {
   position: absolute;
   opacity: 0.88;
-  animation-name: projects-boss-star-drift;
+  animation-name: projects-star-drift;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-.projects-boss-star--alt {
-  animation-name: projects-boss-star-drift-alt;
+.projects-star--alt {
+  animation-name: projects-star-drift-alt;
 }
 
-@keyframes projects-boss-star-drift {
+@keyframes projects-star-drift {
   0%,
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -46,7 +46,7 @@
   }
 }
 
-@keyframes projects-boss-star-drift-alt {
+@keyframes projects-star-drift-alt {
   0%,
   100% {
     transform: translate(0, 0) rotate(0deg);
@@ -59,7 +59,7 @@
   }
 }
 
-.projects-boss-badge {
+.projects-badge {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -71,11 +71,11 @@
   background: rgba(255, 255, 255, 0.9);
 }
 
-.projects-boss-main {
+.projects-main {
   max-width: 720px;
 }
 
-.projects-boss-construction {
+.projects-construction {
   margin-top: 48px;
   display: flex;
   flex-direction: column;
@@ -83,22 +83,22 @@
   gap: 16px;
 }
 
-.projects-boss-cs-icon {
+.projects-cs-icon {
   font-size: 3rem;
 }
 
-.projects-boss-cs-text {
+.projects-cs-text {
   font-family: var(--f-serif);
   font-size: 1.15rem;
   color: var(--c-text-light);
   margin: 0;
 }
 
-.projects-boss-cat-shell {
+.projects-cat-shell {
   margin-bottom: 28px;
 }
 
-.projects-boss-cat-wrap {
+.projects-cat-wrap {
   position: relative;
   z-index: 2;
   display: flex;
@@ -112,7 +112,7 @@
   margin-bottom: 8px;
 }
 
-.projects-boss-grid {
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 18px;
@@ -120,7 +120,7 @@
   text-align: left;
 }
 
-.projects-boss-card {
+.projects-card {
   margin: 0;
   padding: 18px 16px 20px;
   border: 1px solid var(--c-line-dark);
@@ -131,13 +131,13 @@
   cursor: default;
 }
 
-.projects-boss-card:hover {
+.projects-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.1);
   border-color: var(--c-text);
 }
 
-.projects-boss-card-mascot {
+.projects-card-mascot {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,12 +145,12 @@
   margin-bottom: 10px;
 }
 
-.projects-boss-card-mascot svg {
+.projects-card-mascot svg {
   max-height: 64px;
   width: auto;
 }
 
-.projects-boss-card-name {
+.projects-card-name {
   font-family: var(--f-serif);
   font-size: 1.35rem;
   font-weight: 600;
@@ -158,7 +158,7 @@
   color: var(--c-text);
 }
 
-.projects-boss-card-tag {
+.projects-card-tag {
   font-family: var(--f-sans);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -167,7 +167,7 @@
   margin: 0 0 10px;
 }
 
-.projects-boss-card-blurb {
+.projects-card-blurb {
   font-family: var(--f-sans);
   font-size: 13px;
   line-height: 1.5;

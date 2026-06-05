@@ -1,4 +1,4 @@
-.work-boss-page {
+.exp-page {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -8,12 +8,12 @@
   padding-bottom: 48px;
 }
 
-.work-boss-page .editorial-bg-hex-grid,
-.work-boss-page .editorial-bg-blur {
+.exp-page .editorial-bg-hex-grid,
+.exp-page .editorial-bg-blur {
   position: fixed;
 }
 
-.work-boss-dots {
+.exp-dots {
   position: fixed;
   inset: 0;
   z-index: 3;
@@ -21,34 +21,34 @@
   overflow: hidden;
 }
 
-.work-boss-dot {
+.exp-dot {
   position: absolute;
   border-radius: 50%;
   background: #bbbbbb;
   opacity: 0.22;
-  animation-name: work-boss-dot-drift;
+  animation-name: exp-dot-drift;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-.work-boss-dot:nth-child(odd) {
+.exp-dot:nth-child(odd) {
   background: #999999;
-  animation-name: work-boss-dot-drift-alt;
+  animation-name: exp-dot-drift-alt;
 }
 
-@keyframes work-boss-dot-drift {
+@keyframes exp-dot-drift {
   0%, 100% { transform: translate(0, 0); }
   35% { transform: translate(14px, -20px); }
   65% { transform: translate(-10px, -32px); }
 }
 
-@keyframes work-boss-dot-drift-alt {
+@keyframes exp-dot-drift-alt {
   0%, 100% { transform: translate(0, 0); }
   40% { transform: translate(-16px, -24px); }
   70% { transform: translate(10px, -14px); }
 }
 
-.work-boss-top {
+.exp-top {
   position: relative;
   z-index: 20;
   display: flex;
@@ -62,8 +62,8 @@
   pointer-events: auto;
 }
 
-.work-boss-back,
-.work-boss-to-timeline {
+.exp-back,
+.exp-to-timeline {
   font-family: var(--f-sans);
   font-size: 12px;
   font-weight: 600;
@@ -77,14 +77,14 @@
   display: inline-block;
 }
 
-.work-boss-back:hover,
-.work-boss-to-timeline:hover {
+.exp-back:hover,
+.exp-to-timeline:hover {
   color: var(--c-text);
   border-color: var(--c-text);
   transform: translateY(-1px);
 }
 
-.work-boss-badge {
+.exp-badge {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -96,7 +96,7 @@
   background: rgba(255, 255, 255, 0.9);
 }
 
-.work-boss-main {
+.exp-main {
   position: relative;
   z-index: 15;
   max-width: 640px;
@@ -106,7 +106,7 @@
   pointer-events: auto;
 }
 
-.work-boss-eyebrow {
+.exp-eyebrow {
   font-family: var(--f-sans);
   font-size: 11px;
   letter-spacing: 0.14em;
@@ -115,7 +115,7 @@
   margin: 0 0 8px;
 }
 
-.work-boss-title {
+.exp-title {
   font-family: var(--f-serif);
   font-size: clamp(2.5rem, 8vw, 3.75rem);
   font-weight: 500;
@@ -124,7 +124,7 @@
   color: var(--c-text);
 }
 
-.work-boss-cat-shell {
+.exp-cat-shell {
   position: relative;
   margin: 32px auto 36px;
   min-height: 280px;
@@ -134,7 +134,7 @@
   justify-content: flex-end;
 }
 
-.work-boss-cat-pedestal {
+.exp-cat-pedestal {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -146,7 +146,7 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
-.work-boss-cat-wrap {
+.exp-cat-wrap {
   position: relative;
   z-index: 2;
   display: flex;
@@ -160,7 +160,7 @@
   margin-bottom: 8px;
 }
 
-.work-boss-lead {
+.exp-lead {
   font-family: var(--f-sans);
   font-size: 15px;
   line-height: 1.65;
@@ -171,14 +171,14 @@
   padding-left: 18px;
 }
 
-.work-boss-actions {
+.exp-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
   justify-content: center;
 }
 
-.work-boss-primary {
+.exp-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -196,12 +196,12 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.work-boss-primary:hover {
+.exp-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
-.work-boss-secondary {
+.exp-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -218,20 +218,20 @@
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.work-boss-secondary:hover {
+.exp-secondary:hover {
   background: var(--c-text);
   color: var(--c-bg);
   border-color: var(--c-text);
 }
 
 /* Hero image inside white capsule */
-.work-boss-img-wrap {
+.exp-img-wrap {
   padding: 0 !important;
   overflow: hidden;
   border-radius: 140px;
 }
 
-.work-boss-hero-img {
+.exp-hero-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -240,7 +240,7 @@
 }
 
 /* Experience timeline */
-.work-boss-timeline {
+.exp-timeline {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -248,7 +248,7 @@
   text-align: left;
 }
 
-.work-boss-exp-card {
+.exp-exp-card {
   padding: 20px 20px 16px;
   border: 1px solid var(--c-line-dark);
   border-radius: 20px;
@@ -257,16 +257,16 @@
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
 }
 
-.work-boss-exp-card:hover {
+.exp-exp-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
 }
 
-.work-boss-exp-header {
+.exp-exp-header {
   margin-bottom: 10px;
 }
 
-.work-boss-exp-role {
+.exp-exp-role {
   font-family: var(--f-serif);
   font-size: 1.15rem;
   font-weight: 600;
@@ -274,21 +274,21 @@
   margin-bottom: 2px;
 }
 
-.work-boss-exp-company {
+.exp-exp-company {
   font-family: var(--f-sans);
   font-size: 13px;
   font-weight: 500;
   color: var(--c-text);
 }
 
-.work-boss-exp-period {
+.exp-exp-period {
   font-family: var(--f-sans);
   font-size: 12px;
   color: var(--c-text-light);
   margin-top: 2px;
 }
 
-.work-boss-exp-bullets {
+.exp-exp-bullets {
   font-family: var(--f-sans);
   font-size: 13px;
   line-height: 1.65;
@@ -297,21 +297,21 @@
   padding-left: 18px;
 }
 
-.work-boss-exp-bullets li {
+.exp-exp-bullets li {
   margin-bottom: 6px;
 }
 
-.work-boss-exp-bullets li:last-child {
+.exp-exp-bullets li:last-child {
   margin-bottom: 0;
 }
 
-.work-boss-exp-tags {
+.exp-exp-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.work-boss-exp-tag {
+.exp-exp-tag {
   font-family: var(--f-sans);
   font-size: 10px;
   font-weight: 500;
@@ -334,44 +334,44 @@
 }
 
 @media (max-width: 600px) {
-  .work-boss-top {
+  .exp-top {
     padding: 14px 16px 6px;
   }
 
-  .work-boss-main {
+  .exp-main {
     padding: 8px 16px 32px;
   }
 
-  .work-boss-title {
+  .exp-title {
     font-size: clamp(2rem, 10vw, 2.8rem);
   }
 
-  .work-boss-hero-img {
+  .exp-hero-img {
     height: 160px;
   }
 
-  .work-boss-cat-shell {
+  .exp-cat-shell {
     margin: 20px auto 24px;
     min-height: 0;
   }
 
-  .work-boss-lead {
+  .exp-lead {
     font-size: 14px;
   }
 
-  .work-boss-exp-card {
+  .exp-exp-card {
     padding: 16px 14px 14px;
   }
 
-  .work-boss-exp-role {
+  .exp-exp-role {
     font-size: 1rem;
   }
 
-  .work-boss-exp-bullets {
+  .exp-exp-bullets {
     font-size: 12px;
   }
 
-  .work-boss-timeline {
+  .exp-timeline {
     gap: 12px;
   }
 }

@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm start *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(open http://localhost:3000)",
+      "Bash(npx chromium-cli *)",
+      "Bash(npx playwright *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(curl -s https://raw.githubusercontent.com/ipenywis/walking-cat-css-animation/master/src/index.html)",
+      "Bash(curl -s https://raw.githubusercontent.com/ipenywis/walking-cat-css-animation/master/src/index.css)",
+      "Bash(curl -s https://raw.githubusercontent.com/ipenywis/walking-cat-css-animation/master/package.json)",
+      "Bash(curl -s https://api.github.com/repos/ipenywis/walking-cat-css-animation/git/trees/master?recursive=1)",
+      "Bash(curl -s https://api.github.com/repos/ipenywis/walking-cat-css-animation/contents/)",
+      "Bash(curl -L \"https://raw.githubusercontent.com/ipenywis/walking-cat-css-animation/master/src/assets/cat_tiles.png\" -o /Users/anannyashreesharma/Desktop/shree-1/portfolio-react/public/cat_tiles.png)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('name:', d.get\\('name'\\)\\); print\\('email:', d.get\\('email'\\)\\); print\\('blog:', d.get\\('blog'\\)\\); print\\('twitter:', d.get\\('twitter_username'\\)\\); print\\('location:', d.get\\('location'\\)\\); print\\('bio:', d.get\\('bio'\\)\\); print\\('github:', d.get\\('html_url'\\)\\)\")",
+      "Bash(xargs cat)",
+      "Bash(lsof -ti:3000)",
+      "Bash(npm run *)",
+      "Bash(python3 -m pip show git-filter-repo)",
+      "Bash(pip3 install *)",
+      "Bash(git filter-repo *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)",
+      "Bash(cp WorkBossPage.tsx ExperiencePage.tsx)",
+      "Bash(cp WorkBossPage.css ExperiencePage.css)",
+      "Bash(cp ProjectsBossPage.tsx ProjectsPage.tsx)",
+      "Bash(cp ProjectsBossPage.css ProjectsPage.css)",
+      "Bash(sed -i '' -e s/WorkBossPage/ExperiencePage/g -e 's|'\\\\''./WorkBossPage.css'\\\\''|'\\\\''./ExperiencePage.css'\\\\''|g' -e s/work-boss-/exp-/g ExperiencePage.tsx)",
+      "Bash(sed -i '' -e s/work-boss-/exp-/g ExperiencePage.css)",
+      "Bash(sed -i '' -e s/ProjectsBossPage/ProjectsPage/g -e 's|'\\\\''./WorkBossPage.css'\\\\''|'\\\\''./ExperiencePage.css'\\\\''|g' -e 's|'\\\\''./ProjectsBossPage.css'\\\\''|'\\\\''./ProjectsPage.css'\\\\''|g' -e s/projects-boss-/projects-/g -e s/work-boss-/exp-/g ProjectsPage.tsx)",
+      "Bash(sed -i '' -e s/projects-boss-/projects-/g -e s/work-boss-/exp-/g ProjectsPage.css)"
+    ],
+    "additionalDirectories": [
+      "/tmp",
+      "/private/tmp"
+    ]
+  }
+}

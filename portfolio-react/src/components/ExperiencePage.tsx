@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../routes';
 import expImg from '../assets/workk.jpg';
-import './WorkBossPage.css';
+import './ExperiencePage.css';
 
 const EXPERIENCES = [
   {
@@ -45,11 +45,11 @@ function FloatingDots() {
   }));
 
   return (
-    <div className="work-boss-dots" aria-hidden>
+    <div className="exp-dots" aria-hidden>
       {dots.map((d) => (
         <span
           key={d.id}
-          className="work-boss-dot"
+          className="exp-dot"
           style={{
             left: d.left,
             top: d.top,
@@ -64,56 +64,56 @@ function FloatingDots() {
   );
 }
 
-export function WorkBossPage() {
+export function ExperiencePage() {
   document.title = 'Experience — Anannya';
   return (
-    <div className="editorial-idle-root work-boss-page">
+    <div className="editorial-idle-root exp-page">
       <div className="editorial-bg-hex-grid" />
       <div className="editorial-bg-blur" />
       <FloatingDots />
 
-      <header className="work-boss-top">
-        <Link to={ROUTES.editorial} className="work-boss-back">
+      <header className="exp-top">
+        <Link to={ROUTES.editorial} className="exp-back">
           ← Editorial
         </Link>
-        <span className="work-boss-badge">experience</span>
+        <span className="exp-badge">experience</span>
         <span />
       </header>
 
-      <main className="work-boss-main">
-        <p className="work-boss-eyebrow">a few years of shipping things</p>
-        <h1 className="work-boss-title">Experience</h1>
+      <main className="exp-main">
+        <p className="exp-eyebrow">a few years of shipping things</p>
+        <h1 className="exp-title">Experience</h1>
 
-        <div className="work-boss-cat-shell">
-          <div className="work-boss-cat-wrap work-boss-img-wrap">
-            <img src={expImg} alt="Experience" className="work-boss-hero-img" />
+        <div className="exp-cat-shell">
+          <div className="exp-cat-wrap exp-img-wrap">
+            <img src={expImg} alt="Experience" className="exp-hero-img" />
           </div>
         </div>
 
-        <p className="work-boss-lead">
+        <p className="exp-lead">
           I've shipped open-source iOS features at Mozilla, built data infrastructure at Accenture,
           and made things from scratch as an independent product engineer. I like work that holds up
           for real people in production.
         </p>
 
-        <div className="work-boss-timeline">
+        <div className="exp-timeline">
           {EXPERIENCES.map((exp) => (
-            <div key={exp.role + exp.company} className="work-boss-exp-card">
-              <div className="work-boss-exp-header">
+            <div key={exp.role + exp.company} className="exp-exp-card">
+              <div className="exp-exp-header">
                 <div>
-                  <div className="work-boss-exp-role">{exp.role}</div>
-                  <div className="work-boss-exp-company">{exp.company}</div>
-                  <div className="work-boss-exp-period">{exp.period}</div>
+                  <div className="exp-exp-role">{exp.role}</div>
+                  <div className="exp-exp-company">{exp.company}</div>
+                  <div className="exp-exp-period">{exp.period}</div>
                 </div>
               </div>
-              <ul className="work-boss-exp-bullets">
+              <ul className="exp-exp-bullets">
                 {exp.bullets.map((b, i) => (
                   <li key={i}>{b}</li>
                 ))}
               </ul>
-              <div className="work-boss-exp-tags">
+              <div className="exp-exp-tags">
                 {exp.tags.map((t) => (
-                  <span key={t} className="work-boss-exp-tag">{t}</span>
+                  <span key={t} className="exp-exp-tag">{t}</span>
                 ))}
               </div>
             </div>
@@ -124,4 +124,4 @@ export function WorkBossPage() {
   );
 }
 
-export default WorkBossPage;
+export default ExperiencePage;
