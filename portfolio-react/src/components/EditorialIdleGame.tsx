@@ -221,8 +221,8 @@ export function EditorialIdleGame() {
             </div>
           </div>
 
-          {/* Node 6 — Blogs → under construction */}
-          <div className="editorial-node editorial-node-6" onClick={() => setPopup('construction')}>
+          {/* Node 6 — Blogs */}
+          <div className="editorial-node editorial-node-6" onClick={() => navigate(ROUTES.blogs)}>
             <svg className="editorial-svg-text-ring" viewBox="0 0 100 100" aria-hidden>
               <defs>
                 <path id="editorial-curve-6" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="transparent" />
